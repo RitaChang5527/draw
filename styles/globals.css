@@ -1,0 +1,107 @@
+section {
+  background: #fff;
+  border-radius: 7px;
+}
+
+.tools-board {
+  width: 210px;
+  padding: 15px 22px 0;
+}
+
+.row {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.horizontal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.color-options {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  outline: none;
+  /* 避免點擊時出現外框 */
+  cursor: pointer;
+  margin: 10px;
+  transition: border-color 0.3s;
+}
+
+input[type="radio"]:checked {
+  border: 4px solid #000;
+}
+
+input.option-red {
+  background-color: #ff0000;
+}
+
+input.option-orange {
+  background-color: #ffa500;
+}
+
+input.option-green {
+  background-color: #008000;
+}
+
+input.option-black {
+  background-color: #000000;
+}
+
+
+.buttons button {
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 11px 0;
+  font-size: 0.9rem;
+  margin-bottom: 13px;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons .clear-canvas {
+  color: #6c757d;
+  border: 1px solid #6c757d;
+  transition: all 0.3s ease;
+}
+
+.clear-canvas:hover {
+  color: #fff;
+  background: #6c757d;
+}
+
+.buttons .save-img {
+  background: #4a98f7;
+  border: 1px solid #4a98f7;
+}
+
+.drawing-board {
+  flex: 1;
+  overflow: hidden;
+}
+
+.drawing-board canvas {
+  border: 2px solid #c7c7c7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(143, 143, 143, 0.1);
+}
